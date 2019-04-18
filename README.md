@@ -1,4 +1,4 @@
-# My App
+﻿# My App
 
 ## Getting started
 
@@ -9,7 +9,7 @@ find folder api. This folder contains all REST API's built in php. Place this fo
 ```
     htdocs
 ```
-folder in MAMP, XAMP or something else you're using. Run Apache servers and then you can continue with this project instalation
+folder in MAMP, XAMP or something else you're using. Please, if you have any issues with the API calls, you probably need to change the port foreach API call. Currently all calls have port 8888. Run Apache servers and then you can continue with this project instalation
 
 ### Installation
 
