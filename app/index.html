@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>myapp</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <div class="login"><a href="#" class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a></div>
+            <div class="logout display-none"><p> Hello<span class="name">User</span>,</p><a href="#" class="nav-link">Logout</a></div>
+          </li>
+        </ul>
+        <h3 class="text-muted">Telegraph</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-6 offset-6 pull-right">
+          <button data-toggle="modal" data-target="#createArticleModal" class="btn btn-create-article">Create</button>
+        </div>
+
+        <!-- List of all users -->
+        <div class="col-6 offset-6 pull-right">
+          <div class="form-group">
+            <label for="dropdownUsers"> Filter by Name </label>
+            <select class="form-control" id="dropdownUsers">
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <!-- List of article -->
+        <div class="card-list"></div>
+
+        <!-- Article -->
+        <article class="article-wrapper"></article>
+      </section>
+
+      <!-- Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginTitle">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Create Article Modal -->
+      <div class="modal fade" id="createArticleModal" tabindex="-1" role="dialog" aria-labelledby="createArticleTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="createArticleTitle">Create Article</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Update Article Modal -->
+      <div class="modal fade" id="updateArticleModal" tabindex="-1" role="dialog" aria-labelledby="updateArticleTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="updateArticleTitle">Update Article</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="footer">
+        <p>by Stefan Joncic</p>
+      </div>
+    </div>
+    <!-- build:js scripts/vendor.js -->
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

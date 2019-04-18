@@ -1,0 +1,244 @@
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+}
+
+.display-none {
+  display: none!important;
+}
+
+.header {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.header h3 {
+  display: inline-flex;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.nav-pills {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.logout {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logout p {
+  display: inline-flex;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.name {
+  padding-left: 10px;
+}
+
+.eye {
+  width: 35px;
+  height: 100%;
+  background: url('../images/icons/eye.svg') no-repeat center;
+  cursor: pointer;
+}
+
+.eye-closed {
+  background: url('../images/icons/eye-closed.svg') no-repeat center;
+  opacity: 0.5;
+}
+
+.footer,
+.pull-right {
+  text-align: right;
+}
+
+.btn-create-article,
+.btn-create-article:focus,
+#dropdownUsers {
+  border: 2px solid #C0C0C0;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-create-article {
+  display: none;
+}
+
+.update-button {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 30px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background: url('../images/icons/gear.svg') no-repeat center;
+  cursor: pointer;
+}
+
+.delete-button {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background: url('../images/icons/trashcan.svg') no-repeat center;
+  cursor: pointer;
+}
+
+.image-wrapper,
+.image-wrapper img  {
+  width: 100%;
+}
+
+.card-list {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  display: inline-flex;
+  width: 14rem;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  cursor:pointer;
+}
+.card .image-wrapper {
+  transition: 0.3s;
+}
+
+.card:hover .image-wrapper{
+  background: #fff;
+  opacity: 0.3;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text {
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  max-height: 72px;
+}
+.btn-goBack,
+.btn-goBack:focus {
+  box-shadow: none;
+  outline: none;
+}
+.btn-goBack::before {
+  content:'\02039';
+  display: inline-flex;
+  justify-content: center;
+  height: 12px;
+  width: 18px;
+}
+.article-title {
+  margin-bottom: 25px;
+}
+.article .image-wrapper {
+  margin-bottom: 25px;
+}
+
+.author-name-wrapper {
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 35px;
+}
+.author-name {
+  font-weight: 600;
+}
+
+#aticleImage {
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: #DC143C;
+}
+.error .form-control,
+.form-control.error {
+  border-color: #DC143C;
+  background-color: rgba(220, 20, 60, 0.2);
+}
+
+.logged-in .delete-button,
+.logged-in .update-button,
+.logged-in .btn-create-article {
+  display: inline-block;
+}
